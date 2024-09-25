@@ -45,7 +45,7 @@ const DraggableButton = ({ setInvitationOpen }: any) => {
           </button>
         </Draggable>
 
-        <p className={styles.open_text}>Open innovation</p>
+        <p className={styles.open_text}>Open Invitation</p>
         <Draggable
           axis="x"
           bounds="parent"
