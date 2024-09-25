@@ -5,8 +5,7 @@ import VolumeOffIcon from "@mui/icons-material/VolumeOff";
 import audioSrc from "../../../src/assets/siro-hasak.mp3";
 import styles from "./PlaySong.module.css";
 
-const PlaySong = ({ isInvitationOpen }: any) => {
-  const [isPlaying, setIsPlaying] = useState(true);
+const PlaySong = ({ isInvitationOpen, setInvitationOpen }: any) => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
@@ -22,22 +21,22 @@ const PlaySong = ({ isInvitationOpen }: any) => {
   }, []);
 
   useEffect(() => {
-    if (isPlaying) {
+    if (isInvitationOpen) {
       audioRef.current?.play().catch((error) => {
         console.error("Playback failed:", error);
       });
     } else {
       audioRef.current?.pause();
     }
-  }, [isPlaying]);
+  }, [isInvitationOpen]);
 
   const togglePlay = () => {
-    setIsPlaying((prev) => !prev);
+    setInvitationOpen((prev: boolean) => !prev);
   };
 
   return (
     <button className={styles.playSongButton} onClick={togglePlay}>
-      {isPlaying ? (
+      {isInvitationOpen ? (
         <VolumeUpIcon style={{ fontSize: 30 }} />
       ) : (
         <VolumeOffIcon style={{ fontSize: 30 }} />

@@ -11,7 +11,10 @@ const MainScreen = () => {
     <>
       {isInvitationOpen ? (
         <div style={{ width: "100%" }}>
-          <PlaySong isInvitationOpen={isInvitationOpen} />
+          <PlaySong
+            isInvitationOpen={isInvitationOpen}
+            setInvitationOpen={setInvitationOpen}
+          />
           <WeddingInvitation />
         </div>
       ) : (
