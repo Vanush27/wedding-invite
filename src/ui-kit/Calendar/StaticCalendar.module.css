@@ -1,0 +1,82 @@
+.static_calendar {
+  font-family: monospace;
+  background-color: #d6e6fb;
+  color: #222;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 52%;
+  margin: 80px auto 80px;
+  padding-left: 32px;
+  padding-bottom: 12px;
+}
+
+.header {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.month_year {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+}
+
+.days_of_week,
+.days_of_month {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-transform: uppercase;
+  align-items: center;
+  font-family: cursive;
+}
+
+.days {
+  font-weight: 500;
+  font-size: 18px;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  padding: 8px;
+  font-family: monospace;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.highlight {
+  background-color: #2572ea;
+  border-radius: 50%;
+  color: #fff;
+  animation: flash 3s infinite;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .static_calendar {
+    font-family: monospace;
+    background-color: #d6e6fb;
+    color: #222;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 92%;
+    margin: 80px auto 80px;
+    padding: 0;
+  }
+}

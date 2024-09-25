@@ -1,0 +1,26 @@
+.footerContainer {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.sirov{
+  font-size: 24px;
+  color: #000;
+  padding-bottom: 40px;
+  font-family: monospace;
+}
+
+.name {
+  font-size: 20px;
+  font-family: cursive;
+}
+
+
+
+@media screen and (max-width: 700px) {
+
+}

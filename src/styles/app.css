@@ -1,0 +1,89 @@
+:root {
+	--zindex-underlay: -1;
+	--zindex-overlay: 1;
+	--zindex-dropdown: 1000;
+	--zindex-sticky: 1020;
+	--zindex-fixed: 1030;
+	--zindex-modal-backdrop: 1040;
+	--zindex-modal: 1050;
+	--zindex-popover: 1060;
+	--zindex-tooltip: 1070;
+	--zindex-app-overlay: 2000;
+
+	/* background-color: var(--background-color); */
+	background-color: var(--color-white);
+}
+
+html {
+	/* overflow: hidden; prevent safari overflow-scrolling */
+	/* REMOVED AS SCREEN DON'T SCROLLING */
+	height: 100%;
+}
+
+body {
+	/* height: 100%; REMOVED AS SCREEN DON'T SCROLLING */
+	min-height: 100%;
+	margin: 0;
+	background-color: var(--color-lighterGrey);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+	overflow: hidden;
+	height: 100%;
+}
+
+::selection {
+	text-shadow: none;
+}
+
+* {
+	box-sizing: border-box;
+
+}
+
+a {
+	cursor: pointer;
+	font-size: inherit;
+	line-height: inherit;
+	outline: none;
+	text-decoration: underline;
+}
+a:hover,
+a:focus,
+a:active {
+	text-decoration: underline;
+}
+
+button,
+input[type='button'],
+.button {
+	border-width: 1px;
+	appearance: none;
+	box-shadow: none;
+	cursor: pointer;
+	outline: 0;
+}
+
+button:disabled,
+button[disabled],
+input[type='button']:disabled,
+input[type='button'][disabled],
+.button:disabled,
+.button[disabled] {
+	cursor: not-allowed;
+}
+
+img {
+	pointer-events: none;
+	user-select: none;
+}
+
+b,
+strong {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: bold;
+	line-height: inherit;
+}

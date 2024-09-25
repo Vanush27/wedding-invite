@@ -1,0 +1,27 @@
+.container {
+  min-height: 1000px;
+  padding: 100px 0;
+  width: 100%;
+  height: auto;
+  color: #412222;
+  background: url('../../assets/image1.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .container {
+    min-height: 500px;
+    padding: 50px 0;
+  }
+ 
+}
+
+@media only screen and (max-width: 481px) {
+  .container {
+    margin-top: 10px;
+  }
+}
+
