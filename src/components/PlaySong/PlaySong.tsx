@@ -10,6 +10,7 @@ const PlaySong = ({ isInvitationOpen }: any) => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   const audioRef = useRef(new Audio(audioSrc));
+  const buttonRef = React.useRef<any>(null);
 
   useEffect(() => {
     setIsPlaying(true);
@@ -24,8 +25,14 @@ const PlaySong = ({ isInvitationOpen }: any) => {
     }
   }, [isPlaying]);
 
+  useEffect(() => {
+    buttonRef?.current?.click();
+    buttonRef?.current?.click();
+  }, []);
+
   return (
     <button
+      ref={buttonRef}
       className={styles.playSongButton}
       onClick={() => setIsPlaying(!isPlaying)}
     >
