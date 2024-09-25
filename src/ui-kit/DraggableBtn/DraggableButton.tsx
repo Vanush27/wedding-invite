@@ -15,7 +15,6 @@ const DraggableButton = ({ setInvitationOpen }: any) => {
   };
 
   const handleDrag = (e: any, data: any) => {
-    const circleCenter = calculateCircleCenter();
     if (data.x >= position.x) {
       setPosition({ x: data.x, y: position.y });
     }
@@ -50,7 +49,7 @@ const DraggableButton = ({ setInvitationOpen }: any) => {
           axis="x"
           bounds="parent"
           //   position={position2}
-          //   onStop={handleStop}
+          // onStop={handleStop}
           disabled
         >
           <div className={styles.open_inv}></div>
