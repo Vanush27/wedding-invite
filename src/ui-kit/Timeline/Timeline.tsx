@@ -7,27 +7,27 @@ const Timeline = () => {
 
   const [firstEventRef, firstEventInView] = useInView({
     triggerOnce: false,
-    threshold: 0.1,
+    threshold: 0,
   });
 
   const [secondEventRef, secondEventInView] = useInView({
     triggerOnce: false,
-    threshold: 0.1,
+    threshold: 0,
   });
 
   const [thirdEventRef, thirdEventInView] = useInView({
     triggerOnce: false,
-    threshold: 0.1,
+    threshold: 0,
   });
 
   const [fourthEventRef, fourthEventInView] = useInView({
     triggerOnce: false,
-    threshold: 0.1,
+    threshold: 0,
   });
 
   const [fifthEventRef, fifthEventInView] = useInView({
     triggerOnce: false,
-    threshold: 0.1,
+    threshold: 0,
   });
 
   useEffect(() => {
@@ -41,8 +41,6 @@ const Timeline = () => {
         }
       });
     };
-
-    // const debouncedHandleScroll = debounce<any>(, 100);
 
     window.addEventListener("scroll", handleScroll);
 

@@ -16,7 +16,6 @@ const DraggableButton = ({ setInvitationOpen }: any) => {
 
   const handleDrag = (e: any, data: any) => {
     const circleCenter = calculateCircleCenter();
-    console.log(data.x, circleCenter);
     if (data.x >= position.x) {
       setPosition({ x: data.x, y: position.y });
     }

@@ -1,10 +1,9 @@
 import MapDetalis from "@ui-kit/MapDetalis/MapDetalis";
-import styles from "./styles.module.css";
 import dvin_restoran from "../../assets/dvin_restoran.png";
 
 const HallPage = () => {
   return (
-    <div className={styles.ccc}>
+    <div>
       <MapDetalis
         url={"https://yandex.ru/map-widget/v1/-/CDDD688h"}
         name={"ԴՎԻՆ Ռեստորան"}

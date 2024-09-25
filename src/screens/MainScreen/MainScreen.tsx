@@ -7,7 +7,7 @@ import WeddingInvitation from "@screens/WeddingInvitation/WeddingInvitation";
 const MainScreen = () => {
   const [isInvitationOpen, setInvitationOpen] = useState(false);
 
-  const renderInvitation = () => (
+  return (
     <>
       {isInvitationOpen ? (
         <div style={{ width: "100%" }}>
@@ -19,8 +19,6 @@ const MainScreen = () => {
       )}
     </>
   );
-
-  return <>{renderInvitation()}</>;
 };
 
 export default MainScreen;

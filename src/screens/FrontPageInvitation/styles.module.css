@@ -17,7 +17,6 @@
   background-attachment: fixed;
   background-size: cover;
   
-  /* background-color: #412222; */
 }
 
 .invitationText {
@@ -37,7 +36,7 @@
 
 @media only screen and (max-width: 768px) {
   .invitationText {
-    font-size: 42px;
+    font-size: 46px;
     top: 9%;
     line-height: 60px;
     letter-spacing: 1px;

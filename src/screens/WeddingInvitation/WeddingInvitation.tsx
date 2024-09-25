@@ -1,4 +1,4 @@
-import { ChurchPage, HallPage, InviteForm, Programmer } from "@components";
+import { ChurchPage, HallPage, Programmer } from "@components";
 import Footer from "@components/Footer/Footer";
 
 import WelcomePage from "@components/WelcomePage/WelcomePage";
