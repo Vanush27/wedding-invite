@@ -7,40 +7,31 @@ import audioSrc from "../../../src/assets/siro-hasak.mp3";
 import styles from "./PlaySong.module.css";
 
 const PlaySong = ({ isInvitationOpen }: any) => {
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
 
-  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const audio = new Audio(audioSrc);
+
+  const audioRef = useRef(audio);
   const buttonRef = useRef<any>(null);
 
   useEffect(() => {
     setIsPlaying(true);
-
-    audioRef.current = new Audio(audioSrc);
-    audioRef.current.volume = 0.5;
-
-    return () => {
-      audioRef.current?.pause();
-      audioRef.current = null;
-    };
   }, [isInvitationOpen]);
 
   useEffect(() => {
     if (isPlaying) {
+      // audioRef.current.volume = 0.5;
       audioRef.current?.play();
     } else {
       audioRef.current?.pause();
     }
   }, [isPlaying]);
 
-  useEffect(() => {
-    setIsPlaying(true);
-  }, [isInvitationOpen]);
-
   return (
     <button
       ref={buttonRef}
       className={styles.playSongButton}
-      onClick={() => setIsPlaying((prev) => !prev)}
+      onClick={() => setIsPlaying(!isPlaying)}
     >
       {isPlaying ? (
         <VolumeUpIcon style={{ fontSize: 30 }} />
