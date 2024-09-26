@@ -4,14 +4,26 @@ import VolumeUpIcon from "@mui/icons-material/VolumeUp";
 import VolumeOffIcon from "@mui/icons-material/VolumeOff";
 
 import audioSrc from "../../../src/assets/siro-hasak.mp3";
+
+import { Howl } from "howler";
+
 import styles from "./PlaySong.module.css";
 
 const PlaySong = ({ isInvitationOpen }: any) => {
   const [isPlaying, setIsPlaying] = useState(true);
 
-  const audio = new Audio(audioSrc);
+  // const audio = new Audio(audioSrc);
 
-  const audioRef = useRef(audio);
+  // const audioRef = useRef(audio);
+  //
+
+  const sound = new Howl({
+    src: [audioSrc], // Specify the path to your audio file
+    html5: true, // Ensures the audio plays in modern browsers
+  });
+
+  const audioRef = useRef(sound);
+
   const buttonRef = useRef<any>(null);
 
   useEffect(() => {
@@ -20,8 +32,7 @@ const PlaySong = ({ isInvitationOpen }: any) => {
 
   useEffect(() => {
     if (isPlaying) {
-      // audioRef.current.volume = 0.5;
-      audioRef.current?.play();
+      audioRef.current.play();
     } else {
       audioRef.current?.pause();
     }
