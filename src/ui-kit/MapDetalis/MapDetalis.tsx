@@ -14,13 +14,13 @@ const MapDetalis = ({ url, name, address, time, img }: MapsProps) => {
   };
 
   return (
-    <div className={styles.container}>
+    <div>
       <div className={styles.wrapper}>
         <h3>{name}</h3>
         <p>{time}</p>
         <p>{address}</p>
 
-        <img src={img} className={styles.images} />
+        <img src={img} className={styles.images} alt="maps" />
 
         <div className={styles.button_box}>
           <button onClick={handleClick} className={styles.map_button}>

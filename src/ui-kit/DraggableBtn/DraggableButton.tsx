@@ -47,13 +47,7 @@ const DraggableButton = ({ setInvitationOpen }: any) => {
         </Draggable>
 
         <p className={styles.open_text}>Open Invitation</p>
-        <Draggable
-          axis="x"
-          bounds="parent"
-          //   position={position2}
-          // onStop={handleStop}
-          disabled
-        >
+        <Draggable axis="x" bounds="parent" disabled>
           <div className={styles.open_inv}></div>
         </Draggable>
       </div>

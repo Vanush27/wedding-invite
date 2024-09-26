@@ -33,9 +33,6 @@ const WeddingInvitation = () => {
 
       <Programmer />
 
-      {/* <h1 className={styles.text}>Այստեղ կարող եք գրել Ձեր նախընտրած երգը</h1> */}
-      {/* <InviteForm /> */}
-
       <Footer />
     </>
   );
