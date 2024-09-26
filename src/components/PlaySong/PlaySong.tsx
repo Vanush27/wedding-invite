@@ -9,29 +9,38 @@ import styles from "./PlaySong.module.css";
 const PlaySong = ({ isInvitationOpen }: any) => {
   const [isPlaying, setIsPlaying] = useState(false);
 
-  const ddd = new Audio(audioSrc);
-  const audioRef = useRef(ddd);
-
+  const audioRef = useRef<HTMLAudioElement | null>(null);
   const buttonRef = useRef<any>(null);
 
   useEffect(() => {
     setIsPlaying(true);
+
+    audioRef.current = new Audio(audioSrc);
+    audioRef.current.volume = 0.5;
+
+    return () => {
+      audioRef.current?.pause();
+      audioRef.current = null;
+    };
   }, [isInvitationOpen]);
 
   useEffect(() => {
     if (isPlaying) {
-      audioRef.current.volume = 0.5;
       audioRef.current?.play();
     } else {
       audioRef.current?.pause();
     }
   }, [isPlaying]);
 
+  useEffect(() => {
+    setIsPlaying(true);
+  }, [isInvitationOpen]);
+
   return (
     <button
       ref={buttonRef}
       className={styles.playSongButton}
-      onClick={() => setIsPlaying(!isPlaying)}
+      onClick={() => setIsPlaying((prev) => !prev)}
     >
       {isPlaying ? (
         <VolumeUpIcon style={{ fontSize: 30 }} />

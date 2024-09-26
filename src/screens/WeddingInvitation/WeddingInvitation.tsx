@@ -1,12 +1,11 @@
-import { ChurchPage, HallPage, Programmer } from "@components";
-import Footer from "@components/Footer/Footer";
-
 import WelcomePage from "@components/WelcomePage/WelcomePage";
-
 import StaticCalendar from "@ui-kit/Calendar/StaticCalendar";
+
+import { ChurchPage, HallPage, Programmer } from "@components";
 
 import locationfor from "../../assets/locationfor.svg";
 import location from "../../assets/location.svg";
+import Footer from "@components/Footer/Footer";
 
 import styles from "./WeddingInvitation.module.css";
 
