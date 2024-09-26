@@ -9,14 +9,14 @@ import styles from "./PlaySong.module.css";
 const PlaySong = ({ isInvitationOpen }: any) => {
   const [isPlaying, setIsPlaying] = useState(false);
 
-  const audioRef = useRef(new Audio(audioSrc));
-  const buttonRef = React.useRef<any>(null);
+  const ddd = new Audio(audioSrc);
+  const audioRef = useRef(ddd);
+
+  const buttonRef = useRef<any>(null);
 
   useEffect(() => {
     setIsPlaying(true);
-
-    console.log(audioRef?.current, "audioRef?.current");
-  }, [isInvitationOpen, audioRef?.current]);
+  }, [isInvitationOpen]);
 
   useEffect(() => {
     if (isPlaying) {
@@ -25,7 +25,7 @@ const PlaySong = ({ isInvitationOpen }: any) => {
     } else {
       audioRef.current?.pause();
     }
-  }, [isPlaying, audioRef?.current]);
+  }, [isPlaying]);
 
   return (
     <button

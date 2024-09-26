@@ -23,7 +23,9 @@ const DraggableButton = ({ setInvitationOpen }: any) => {
   const handleStop = (e: any, data: any) => {
     const circleCenter = calculateCircleCenter();
     if (data.x >= circleCenter) {
-      setInvitationOpen(true);
+      setTimeout(() => {
+        setInvitationOpen(true);
+      }, 400);
     } else {
       setPosition(initialPosition);
     }
