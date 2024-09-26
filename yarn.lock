@@ -2338,7 +2338,7 @@
   dependencies:
     "@types/node" "*"
 
-"@types/howler@^2.2.12":
+"@types/howler@*", "@types/howler@^2.2.12":
   version "2.2.12"
   resolved "https://registry.yarnpkg.com/@types/howler/-/howler-2.2.12.tgz#078d20787911f6e3e871a0e93a23832e13abaa59"
   integrity sha512-hy769UICzOSdK0Kn1FBk4gN+lswcj1EKRkmiDtMkUGvFfYJzgaDXmVXkSShS2m89ERAatGIPnTUlp2HhfkVo5g==
@@ -2464,6 +2464,14 @@
   resolved "https://registry.npmjs.org/@types/react-dom/-/react-dom-18.3.0.tgz"
   integrity sha512-EhwApuTmMBmXuFOikhQLIBUn6uFg81SwLMOAUgodJF14SOBOCMdU04gDoYi0WOJJHD144TL32z4yDqCW3dnkQg==
   dependencies:
+    "@types/react" "*"
+
+"@types/react-howler@^5.2.3":
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/@types/react-howler/-/react-howler-5.2.3.tgz#60add229d419453b40a2605f47c710489ccfc8ff"
+  integrity sha512-0XJ+vHLgobVcc8G8f3jlnfIv3FVnUvEuxOyq3TwW9qNBeko7EhHDc9QYtY7mUTcrT86mPTAVCKWitY+TyzHWZw==
+  dependencies:
+    "@types/howler" "*"
     "@types/react" "*"
 
 "@types/react-scroll@^1.8.10":
@@ -5554,7 +5562,7 @@ hoopy@^0.1.4:
   resolved "https://registry.npmjs.org/hoopy/-/hoopy-0.1.4.tgz"
   integrity sha512-HRcs+2mr52W0K+x8RzcLzuPPmVIKMSv97RGHy0Ea9y/mpcaK+xTrjICA04KAHi4GRzxliNqNJEFYWHghy3rSfQ==
 
-howler@^2.2.4:
+howler@^2.2.0, howler@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/howler/-/howler-2.2.4.tgz#bd3df4a4f68a0118a51e4bd84a2bfc2e93e6e5a1"
   integrity sha512-iARIBPgcQrwtEr+tALF+rapJ8qSc+Set2GJQl7xT1MQzWaVkFebdJhR3alVlSiUf5U7nAANKuj3aWpwerocD5w==
@@ -8269,7 +8277,7 @@ prompts@^2.0.1, prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.6.2, prop-types@^15.7.2, prop-types@^15.8.1:
+prop-types@^15.5.6, prop-types@^15.6.2, prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -8419,6 +8427,14 @@ react-firebase-hooks@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/react-firebase-hooks/-/react-firebase-hooks-5.1.1.tgz#fc92bb4b860c6753c806583f64d7f069b6ee6785"
   integrity sha512-y2UpWs82xs+39q5Rc/wq316ca52QsC0n8m801V+yM4IC4hbfOL4yQPVSh7w+ydstdvjN9F+lvs1WrO2VYxpmdA==
+
+react-howler@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/react-howler/-/react-howler-5.2.0.tgz#fceef108f7c691f570155afee1c1436265218219"
+  integrity sha512-oDK+zML0MHf3nVNM4lMxh+re87NDa7fHowea2WK8197yqnMiZfPVHoMXtfb/PtuoOsWLO06vmEAtovwTRWpTFg==
+  dependencies:
+    howler "^2.2.0"
+    prop-types "^15.5.6"
 
 react-intersection-observer@^9.13.1:
   version "9.13.1"
