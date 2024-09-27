@@ -1,18 +1,18 @@
-import StaticCalendar from "@ui-kit/Calendar/StaticCalendar";
-
+import WelcomePage from "@components/WelcomePage/WelcomePage";
 import { ChurchPage, HallPage, Programmer } from "@components";
+
+import StaticCalendar from "@ui-kit/Calendar/StaticCalendar";
+import Footer from "@components/Footer/Footer";
 
 import locationfor from "../../assets/locationfor.svg";
 import location from "../../assets/location.svg";
-import Footer from "@components/Footer/Footer";
 
 import styles from "./WeddingInvitation.module.css";
-import { WelcomeVideo } from "@components/WelcomeVideo";
 
 const WeddingInvitation = () => {
   return (
     <>
-      <WelcomeVideo />
+      <WelcomePage />
       <StaticCalendar />
 
       <div className={styles.location}>
@@ -30,7 +30,6 @@ const WeddingInvitation = () => {
       </div>
 
       <Programmer />
-
       <Footer />
     </>
   );

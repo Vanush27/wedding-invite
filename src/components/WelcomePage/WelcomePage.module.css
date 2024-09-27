@@ -2,22 +2,16 @@
   position: relative;
 }
 
-
-
-.symbol{
+.symbol {
   position: absolute;
-    top: 0%;
-    left: 0%;
+  top: 0%;
+  left: 0%;
 }
 
-
-
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  .symbol{
+  .symbol {
     position: absolute;
     top: 0%;
     left: 0%;
   }
-  
-  
 }

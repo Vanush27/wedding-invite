@@ -2,7 +2,6 @@
   display: none;
 }
 
-
 .container {
   display: flex;
   flex-direction: column;
@@ -11,12 +10,11 @@
 
   height: 100vh;
   background: linear-gradient(rgba(123, 120, 119, 0.5), rgba(74, 76, 87, 0.6)),
-    url('../../assets/background.jpg');
+    url("../../assets/background.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  
 }
 
 .invitationText {
@@ -51,18 +49,11 @@
     height: 10vh;
   }
 
-
-
-
   .invitationTo {
-
     font-size: 20px;
   }
 
   .buttonContainer {
     margin-top: 30px;
   }
-
 }
-
-

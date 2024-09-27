@@ -5,7 +5,6 @@ import VolumeUpIcon from "@mui/icons-material/VolumeUp";
 import VolumeOffIcon from "@mui/icons-material/VolumeOff";
 
 import audioSrc from "../../../src/assets/siro-hasak.mp3"; // Import audio source
-
 import styles from "./PlaySong.module.css";
 
 const PlaySong = ({ isInvitationOpen }: any) => {

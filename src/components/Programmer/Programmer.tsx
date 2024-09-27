@@ -1,5 +1,5 @@
-import time from "../../assets/timeforyou.svg";
 import Timeline from "@ui-kit/Timeline/Timeline";
+import time from "../../assets/timeforyou.svg";
 
 import styles from "./Programmer.module.css";
 

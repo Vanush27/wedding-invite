@@ -1,6 +1,7 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 import { FrontPageInvitation } from "@screens";
+import { PlaySong } from "@components";
 import WeddingInvitation from "@screens/WeddingInvitation/WeddingInvitation";
 
 const MainScreen = () => {
@@ -10,6 +11,7 @@ const MainScreen = () => {
     <>
       {isInvitationOpen ? (
         <div style={{ width: "100%" }}>
+          <PlaySong isInvitationOpen={isInvitationOpen} />
           <WeddingInvitation />
         </div>
       ) : (

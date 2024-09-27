@@ -40,8 +40,7 @@ body {
 	/* Positioning */
 	box-sizing: border-box;
 	color: var(--color-primaryBlack);
-	/* Fonts */
-	/* font-family: 'Karla', sans-serif; */
+
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 21px;
@@ -53,15 +52,12 @@ span,
 small {
 	color: inherit;
 	font-family: monospace;
-
-	/* font-family: 'Karla', sans-serif; */
 }
 
 button {
 	color: inherit;
 	font-family: monospace;
 
-	/* font-family: 'Karla', sans-serif; */
 	font-size: inherit;
 }
 
