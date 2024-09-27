@@ -1,4 +1,3 @@
-import WelcomePage from "@components/WelcomePage/WelcomePage";
 import StaticCalendar from "@ui-kit/Calendar/StaticCalendar";
 
 import { ChurchPage, HallPage, Programmer } from "@components";
