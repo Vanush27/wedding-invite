@@ -13,7 +13,6 @@ import { WelcomeVideo } from "@components/WelcomeVideo";
 const WeddingInvitation = () => {
   return (
     <>
-      {/* <WelcomePage /> */}
       <WelcomeVideo />
       <StaticCalendar />
 
