@@ -1,0 +1,35 @@
+
+.videoWrapper {
+  position: relative;
+}
+
+.videoWrapper img{
+  width: 25px;
+  height: 25px;
+}
+
+.videoLogo {
+  position: absolute;
+  top: -4%;
+  left: -3%;
+}
+
+.videoLogo img {
+  width: 62%;
+  height: 100%;
+}
+
+
+.videoControls {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.controls > button {
+  border: 0;
+  background: none;
+}
+
+
+

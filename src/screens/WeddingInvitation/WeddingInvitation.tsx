@@ -8,12 +8,13 @@ import location from "../../assets/location.svg";
 import Footer from "@components/Footer/Footer";
 
 import styles from "./WeddingInvitation.module.css";
+import { WelcomeVideo } from "@components/WelcomeVideo";
 
 const WeddingInvitation = () => {
   return (
     <>
-      <WelcomePage />
-
+      {/* <WelcomePage /> */}
+      <WelcomeVideo />
       <StaticCalendar />
 
       <div className={styles.location}>
