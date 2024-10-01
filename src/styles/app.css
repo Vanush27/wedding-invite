@@ -15,12 +15,13 @@
 }
 
 html {
-	-webkit-text-size-adjust: 100%; /* Отключаем автоматическую настройку размера текста */
-	text-size-adjust: 100%;
-	/* overflow: hidden; prevent safari overflow-scrolling */
-	/* REMOVED AS SCREEN DON'T SCROLLING */
-	/* height: 100%; */
-}
+	zoom: 1; 
+	-webkit-text-size-adjust: 100%; /* Отключает настройку шрифта для браузеров на базе WebKit */
+	text-size-adjust: 100%; /* Отключает настройку шрифта для всех браузеров */
+		height: 100%;
+  }
+
+
 
 body {
 	/* height: 100%; REMOVED AS SCREEN DON'T SCROLLING */
