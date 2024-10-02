@@ -1,3 +1,5 @@
+@import-normalize; /* bring in normalize.css styles */
+
 :root {
 	--zindex-underlay: -1;
 	--zindex-overlay: 1;
