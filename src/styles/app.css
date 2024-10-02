@@ -1,7 +1,5 @@
-@import-normalize; /* bring in normalize.css styles */
-
 :root {
-	--zindex-underlay: -1;
+	/* --zindex-underlay: -1;
 	--zindex-overlay: 1;
 	--zindex-dropdown: 1000;
 	--zindex-sticky: 1020;
@@ -10,13 +8,15 @@
 	--zindex-modal: 1050;
 	--zindex-popover: 1060;
 	--zindex-tooltip: 1070;
-	--zindex-app-overlay: 2000;
+	--zindex-app-overlay: 2000; */
 
 	/* background-color: var(--background-color); */
 	background-color: var(--color-white);
+	font-family: monospace;
 }
 
 html {
+	font-family: monospace;
 	zoom: 1; 
 	-webkit-text-size-adjust: 100%; /* Отключает настройку шрифта для браузеров на базе WebKit */
 	text-size-adjust: 100%; /* Отключает настройку шрифта для всех браузеров */
@@ -26,6 +26,7 @@ html {
 
 
 body {
+	font-family: monospace;
 	/* height: 100%; REMOVED AS SCREEN DON'T SCROLLING */
 	min-height: 100%;
 	margin: 0;
@@ -91,4 +92,17 @@ strong {
 	/* font-size: inherit; */
 	font-weight: bold;
 	line-height: inherit;
+}
+
+p {
+    margin-bottom: 10px;
+	font-family: monospace;
+}
+
+h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: monospace;
+    font-size: 20px;
+    line-height: 30px;
 }
