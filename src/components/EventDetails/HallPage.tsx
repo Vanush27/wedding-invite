@@ -8,7 +8,7 @@ const HallPage = () => {
         url={"https://yandex.ru/map-widget/v1/-/CDDD688h"}
         name={"ԴՎԻՆ Ռեստորան"}
         address={"ք.Երևան, Ջրվեժ, Քոչինյան փողոց"}
-        time={"17:30 - 23:30"}
+        time={"17:30 - 23:00"}
         img={dvin_restoran}
       />
     </div>

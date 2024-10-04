@@ -136,7 +136,7 @@ const Timeline = () => {
             fourthEventInView ? styles.animateRight : styles.hidden
           }`}
         >
-          17:30 - 23:30
+          17:30 - 23:00
         </p>
         <p
           className={`${styles.text} ${
@@ -160,7 +160,7 @@ const Timeline = () => {
             fifthEventInView ? styles.animateRight : styles.hidden
           }`}
         >
-          00:00
+          23:15
         </p>
         <p
           className={`${styles.text} ${
