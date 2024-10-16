@@ -8,6 +8,23 @@
   align-items: center;
   position: relative;
 }
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+    background-color: #b1caf2;
+  }
+  50% {
+    opacity: 0.3;
+    background-color: #91b4eb;
+  }
+  100% {
+    
+    opacity: 1;
+    background-color: #b1caf2;
+  }
+}
+
 .draggable_btn {
   background-color: #ffffff;
   border-radius: 50%;
@@ -19,7 +36,8 @@
   cursor: pointer;
   z-index: 111;
   border: 1px solid #ffffff;
-
+  animation: flash 4s infinite;
+  
 }
 
 .open_text {

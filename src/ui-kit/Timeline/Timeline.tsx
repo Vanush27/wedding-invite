@@ -88,7 +88,7 @@ const Timeline = () => {
             secondEventInView ? styles.animateRight : styles.hidden
           }`}
         >
-          11:30 - 13:00
+          11:30 - 12:30
         </p>
         <p
           className={`${styles.text} ${
