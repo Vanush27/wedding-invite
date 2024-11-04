@@ -6,7 +6,7 @@ const FrontPageInvitation = ({ setInvitationOpen }: any) => {
     <div>
       <div className={styles.mobileAdditionalBg} />
       <div className={styles.container}>
-        <p className={styles.invitationText}>Save the date Vanush & Lusine</p>
+        <p className={styles.invitationText}>Save the date ... & ...</p>
         <>
           <DraggableButton setInvitationOpen={setInvitationOpen} />
         </>

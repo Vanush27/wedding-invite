@@ -16,7 +16,7 @@ const WelcomePage = () => {
       </div>
 
       <div className={styles.symbol}>
-        <img src={vl} alt="vl" width={"60%"} height={"100%"} />
+        {/* <img src={vl} alt="vl" width={"60%"} height={"100%"} /> */}
       </div>
     </div>
   );
